@@ -12,9 +12,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '%m_aesapb+_$7ydph0no)p)8+6q0&%&tmwgn9=(+zt4eqgl=5w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition 
@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'post',
     'userpost',
+    'rest_framework.authtoken'
 ]
 
 MIDDLEWARE = [
